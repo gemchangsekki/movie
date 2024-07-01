@@ -4,8 +4,6 @@ import Items from "./Items/items";
 import Landingpage from "./Landingpage/landingpage";
 import Navbar from "./NavBar/navbar";
 import Detail from "./Detail/Detail";
-import ExTable from "./example/ExTable";
-
 
 function App() {
   return (
@@ -17,7 +15,6 @@ function App() {
             <Route path="/" element ={<Landingpage/>} />
             <Route path='/movie/:movieId' element={<Detail/>}/>
             <Route path="/items" element ={<Items/>} />
-            <Route path="/example/table" element ={<ExTable/>} />
           </Routes>
         </Router>
       </div>
