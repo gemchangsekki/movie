@@ -1,0 +1,26 @@
+import React from 'react'
+import { Descriptions } from 'antd';
+
+const MovieInfo = (props) => {
+  console.log(props)
+
+  const {movie} = props;
+
+  const items = [
+    {key: '1', label: 'title', children: `${movie.title}`},
+    {key: '2', label: 'Release date', children: `${movie.release_date}`},
+    {key: '3', label: 'Revenue', children: `${movie.revenue}`},
+    {key: '4', label: 'Runtime', children: `${movie.runtime}`},
+    {key: '5', label: 'Vote Average', children: `${movie.vote_average}`},
+    {key: '6', label: 'Vote count', children: `${movie.vote_count}`},
+    {key: '7', label: 'Status', children: `${movie.status}`},
+    {key: '8', label: 'Popularity', children: `${movie.popularity}`},
+    {key: '9', label: 'Budget', children: `${movie.budget}`},
+
+  ]
+  return (
+    <Descriptions title='Movie Info' bordered items={items} />
+  )
+}
+
+export default MovieInfo
