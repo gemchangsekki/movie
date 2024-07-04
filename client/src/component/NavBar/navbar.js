@@ -1,5 +1,6 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const {Header} = Layout;
 
@@ -17,7 +18,7 @@ const {Header} = Layout;
 
 const items = [{
   key : 'Home',
-  label : (<a href='/'> Home</a>)
+  label : (<Link to='/'> Home</Link>)
 }]
 
 const Navbar = () => {

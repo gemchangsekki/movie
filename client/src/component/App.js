@@ -7,19 +7,19 @@ import Detail from "./Detail/Detail";
 
 function App() {
   return (
+        <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Navbar/>
       <div style={{minHeight : '100vh'}}>
-        <Router>
           <Routes>
             <Route path="/" element ={<Landingpage/>} />
-            <Route path='/movie/:movieId' element={<Detail/>}/>
-            <Route path="/items" element ={<Items/>} />
+            <Route path='/detail/:movieId/' element={<Detail/>}/>
+            <Route path="/items/" element ={<Items/>} />
           </Routes>
-        </Router>
       </div>
       <Footer/>
     </div>
+        </Router>
   );
 }
 

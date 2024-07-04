@@ -1,6 +1,6 @@
 import { Row } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { API_KEY, API_URL, IMAGE_BASE_URL } from '../Config';
 import AntCard from '../commons/AntCard';
 import Mainimage from './Section/Mainimage';
@@ -30,6 +30,12 @@ function Landingpage() {
 
   return (
     <>
+
+      <div>
+        {/* <Link to='/Items'>items 이동</Link> &nbsp;&nbsp; */}
+        {/* <a href='/Items'>[a 태그] Items로 이동</a> */}
+      </div>
+      
       <div style={{ width: '100%' }}>
         {/* main Image */}
         {MainmovieImage &&
